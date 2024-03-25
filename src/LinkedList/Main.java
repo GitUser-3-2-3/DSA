@@ -4,15 +4,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
 
-        CircularLinkedList list = new CircularLinkedList();
-        list.insert(23);
-        list.insert(8);
-        list.insert(14);
-        list.insert(45);
-        list.insert(76);
+        LL list1 = new LL();
 
-        list.display();
-        list.delete(14);
-        list.display();
+        list1.insertFirst(12);
+        list1.insertFirst(42);
+        list1.insertFirst(91);
+        list1.insertFirst(25);
+        list1.display();
+
+        list1.insertRec(55, 2);
+
+        list1.display();
     }
 }

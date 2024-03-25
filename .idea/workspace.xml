@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="DoublyLinkedList Implementation for Internal Working">
-      <change afterPath="$PROJECT_DIR$/.history/src/LinkedList/DoublyLinkedList_20240305154819.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/src/LinkedList/DoublyLinkedList_20240312110736.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.history/src/LinkedList/DoublyLinkedList_20240312110741.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/CircularLinkedList.java" afterDir="false" />
+    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="Circular Linked List Implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,26 +35,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.LinkedList.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="LinkedList" />
@@ -86,7 +84,11 @@
       <workItem from="1710710080175" duration="57000" />
       <workItem from="1710760530853" duration="3000" />
       <workItem from="1710876299291" duration="50000" />
-      <workItem from="1711028060226" duration="2448000" />
+      <workItem from="1711028060226" duration="2537000" />
+      <workItem from="1711121020727" duration="1555000" />
+      <workItem from="1711123039980" duration="2509000" />
+      <workItem from="1711291860307" duration="680000" />
+      <workItem from="1711354133605" duration="3726000" />
     </task>
     <task id="LOCAL-00001" summary="LinkedList">
       <option name="closed" value="true" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709634115611</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Circular Linked List Implementation">
+      <option name="closed" value="true" />
+      <created>1711032979253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711032979253</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +142,18 @@
     <MESSAGE value="Insertion at Head and Tail" />
     <MESSAGE value="Deletion in LinkedList" />
     <MESSAGE value="DoublyLinkedList Implementation for Internal Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="DoublyLinkedList Implementation for Internal Working" />
+    <MESSAGE value="Circular Linked List Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circular Linked List Implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
