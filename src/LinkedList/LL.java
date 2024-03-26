@@ -39,25 +39,26 @@ public class LL {
         return ans;
     }
 
-    //******************* MAIN **********************
-    public static void main(String[] args) {
-        System.out.println();
+    // Question 3 (Find length of linked list cycle)
+    public static int lengthCycle(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
 
-        LL list1 = new LL();
-        LL list2 = new LL();
-
-        list1.insertLast(1);
-        list1.insertLast(3);
-        list1.insertLast(5);
-
-        list2.insertLast(1);
-        list2.insertLast(2);
-        list2.insertLast(9);
-        list2.insertLast(14);
-
-        LL ans = LL.merge(list1, list2);
-
-        ans.display();
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (fast == slow) {
+                // calculate the length
+                ListNode temp = slow;
+                int count = 0;
+                do {
+                    temp = temp.next;
+                    count++;
+                } while (temp != slow);
+                return count;
+            }
+        }
+        return 0;
     }
 
     // Question 1 (Remove Duplicates in list)

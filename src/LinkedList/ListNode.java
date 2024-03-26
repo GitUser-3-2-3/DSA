@@ -1,6 +1,6 @@
 package LinkedList;
 
-class ListNode {
+public class ListNode {
     int val;
     ListNode next;
 
@@ -10,7 +10,7 @@ class ListNode {
     }
 }
 
-public class Solution {
+class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
