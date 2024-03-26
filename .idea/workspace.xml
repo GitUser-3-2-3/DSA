@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="Circular Linked List Implementation">
+    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="LeetCode LinkedList Questions">
+      <change afterPath="$PROJECT_DIR$/src/LinkedList/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.LL.executor": "Run",
     "Application.LinkedList.executor": "Run",
     "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -52,7 +52,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,7 +88,9 @@
       <workItem from="1711121020727" duration="1555000" />
       <workItem from="1711123039980" duration="2509000" />
       <workItem from="1711291860307" duration="680000" />
-      <workItem from="1711354133605" duration="3726000" />
+      <workItem from="1711354133605" duration="4168000" />
+      <workItem from="1711448586336" duration="49000" />
+      <workItem from="1711448646631" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="LinkedList">
       <option name="closed" value="true" />
@@ -130,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711032979253</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="LeetCode LinkedList Questions">
+      <option name="closed" value="true" />
+      <created>1711363123309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711363123310</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +153,8 @@
     <MESSAGE value="Deletion in LinkedList" />
     <MESSAGE value="DoublyLinkedList Implementation for Internal Working" />
     <MESSAGE value="Circular Linked List Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circular Linked List Implementation" />
+    <MESSAGE value="LeetCode LinkedList Questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode LinkedList Questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
