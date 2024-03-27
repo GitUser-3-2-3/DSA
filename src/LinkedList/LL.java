@@ -21,6 +21,8 @@ public class LL {
         list.display();
         list.bubbleSort();
         list.display();
+        list.reverse(list.head);
+        list.display();
     }
 
     // Question 2 (Merge two lists in sorted fashion)
@@ -73,6 +75,41 @@ public class LL {
             }
         }
         return 0;
+    }
+
+    // Question (Recursion Reversal)
+    private void reverse(Node node) {
+        if (node == tail) {
+            head = tail;
+            return;
+        }
+
+        reverse(node.next);
+
+        tail.next = node;
+        tail = node;
+        tail.next = null;
+    }
+
+    // In place reversal of linked list
+    public void inReverse() {
+        if (size < 2) {
+            return;
+        }
+
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
+
+        while (present != null) {
+            present.next = prev;
+            prev = present;
+            present = next;
+            if (next != null) {
+                next = next.next;
+            }
+        }
+        head = prev;
     }
 
     // Question (Sort List)
