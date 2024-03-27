@@ -1,5 +1,6 @@
 package LinkedList;
 
+
 public class LL {
     private Node head;
     private Node tail;
@@ -7,6 +8,19 @@ public class LL {
 
     public LL() {
         this.size = 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println();
+
+        LL list = new LL();
+
+        for (int i = 7; i > 0; i--) {
+            list.insertLast(i);
+        }
+        list.display();
+        list.bubbleSort();
+        list.display();
     }
 
     // Question 2 (Merge two lists in sorted fashion)
@@ -61,6 +75,45 @@ public class LL {
         return 0;
     }
 
+    // Question (Sort List)
+    public void bubbleSort() {
+        bubbleSort(size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int column) {
+        if (row == 0) {
+            return;
+        }
+
+        if (column < row) {
+            Node first = get(column);
+            Node second = get(column + 1);
+
+            if (first.value > second.value) {
+                // swap
+                if (first == head) {
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                } else if (second == tail) {
+                    Node prev = get(column - 1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = tail;
+                } else {
+                    Node prev = get(column - 1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+            bubbleSort(row, column + 1);
+        } else {
+            bubbleSort(row - 1, 0);
+        }
+    }
+
     // Question 1 (Remove Duplicates in list)
     public void removeDuplicates() {
         Node node = head;
@@ -78,7 +131,6 @@ public class LL {
     }
 
 // ------------------------------------------------------------------------------------------------------------------ //
-
 
     public void displaySize() {
         System.out.println(this.size);

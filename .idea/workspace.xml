@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="Linked List Cycle Detection">
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/HappyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/LLC2_Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedList/MiddleOfLL.java" afterDir="false" />
+    <list default="true" id="d43038a1-2f16-4a7f-9a73-888ac8a6e60f" name="Changes" comment="Some LeetCode Questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList/LL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/ListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,8 @@
       <workItem from="1711354133605" duration="4168000" />
       <workItem from="1711448586336" duration="49000" />
       <workItem from="1711448646631" duration="1393000" />
-      <workItem from="1711483379989" duration="4249000" />
+      <workItem from="1711483379989" duration="4278000" />
+      <workItem from="1711537064857" duration="1366000" />
     </task>
     <task id="LOCAL-00001" summary="LinkedList">
       <option name="closed" value="true" />
@@ -153,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711450015984</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some LeetCode Questions">
+      <option name="closed" value="true" />
+      <created>1711487649380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711487649380</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +173,8 @@
     <MESSAGE value="Circular Linked List Implementation" />
     <MESSAGE value="LeetCode LinkedList Questions" />
     <MESSAGE value="Linked List Cycle Detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linked List Cycle Detection" />
+    <MESSAGE value="Some LeetCode Questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some LeetCode Questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
