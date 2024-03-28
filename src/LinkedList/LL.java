@@ -92,14 +92,16 @@ public class LL {
     }
 
     // In place reversal of linked list
-    public void inReverse() {
-        if (size < 2) {
-            return;
+    public ListNode reverseList(ListNode head) {
+
+        if (head == null) {
+            return head;
         }
 
-        Node prev = null;
-        Node present = head;
-        Node next = present.next;
+        ListNode prev = null;
+        ListNode present = head;
+        ListNode next = present.next;
+
 
         while (present != null) {
             present.next = prev;
@@ -109,7 +111,7 @@ public class LL {
                 next = next.next;
             }
         }
-        head = prev;
+        return prev;
     }
 
     public ListNode reverseBetween(ListNode head, int left, int right) {
@@ -201,6 +203,89 @@ public class LL {
         }
         tail = node;
         tail.next = null;
+    }
+
+    // Question (Find the middle node)
+    public ListNode middleNode(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    // Question (LinkedList is Palindrome or not)
+
+    public boolean isPalindrome(ListNode head) {
+        ListNode mid = middleNode(head);
+        ListNode secondHead = reverseList(mid);
+        ListNode reReverseHead = secondHead;
+
+        // compare both the halves
+        while (head != null && secondHead != null) {
+            if (head.val != secondHead.val) {
+                break;
+            }
+            head = head.next;
+            secondHead = secondHead.next;
+        }
+        reverseList(reReverseHead);
+
+        return head == null || secondHead == null;
+    }
+
+    public void reorderList(ListNode head) {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        ListNode mid = middleNode(head);
+        ListNode hs = reverseList(mid);
+        ListNode hf = head;
+
+        // re-arrange
+        while (hf != null && hs != null) {
+            ListNode temp = hf.next;
+            hf.next = hs;
+            hf = temp;
+
+            temp = hs.next;
+            hs.next = hf;
+            hs = temp;
+        }
+
+        if (hf != null) {
+            hf.next = null;
+        }
+    }
+
+    // Question (Rotated List)
+    public ListNode rotatedList(ListNode head, int k) {
+        if (k <= 0 || head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode last = head;
+        int length = 1;
+        while (last.next != null) {
+            last = last.next;
+            length++;
+        }
+
+        last.next = head;
+        int rotations = k % length;
+        int skip = length - rotations;
+        ListNode newLast = head;
+        for (int i = 0; i < skip - 1; i++) {
+            newLast = newLast.next;
+        }
+        head = newLast.next;
+        newLast.next = null;
+
+        return head;
     }
 
 // ------------------------------------------------------------------------------------------------------------------ //
